@@ -1,0 +1,62 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 43
+        length: 69
+        placeholder_text: "# TODO завести отдельные счетчики для четных и нечетных чис\
+      ел"
+        initial_state:
+          length: 61
+          offset: 43
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          count_even = 0  # количество четных чисел
+          count_odd = 0  # количество нечетных чисел
+        selected: true
+        status: Solved
+      - offset: 125
+        length: 142
+        placeholder_text: "# TODO с помощью одного цикла перебрать все числа и посчита\
+      ть количество четных и нечетных"
+        initial_state:
+          length: 90
+          offset: 106
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          for value in list_:  # перебираем все числа
+              if value % 2 == 0:
+                  count_even += 1
+              else:
+                  count_odd += 1
+        selected: false
+        status: Solved
+      - offset: 308
+        length: 209
+        placeholder_text: "# TODO вывести каких чисел больше"
+        initial_state:
+          length: 33
+          offset: 198
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          if count_even > count_odd:
+              print('Четных чисел больше')
+          elif count_even < count_odd:
+              print('Нечетных чисел больше')
+          else:
+              print('Четных и нечетных одинаковое количество')
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 19 Oct 2024 12:56:32 UTC"
+record: -1

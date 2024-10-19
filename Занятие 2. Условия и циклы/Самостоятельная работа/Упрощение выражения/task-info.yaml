@@ -1,0 +1,27 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 194
+        length: 43
+        placeholder_text: "...  # TODO подставить результат выражения"
+        initial_state:
+          length: 42
+          offset: 95
+        initialized_from_dependency: false
+        encrypted_possible_answer: "True"
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 19 Oct 2024 12:36:29 UTC"
+record: -1

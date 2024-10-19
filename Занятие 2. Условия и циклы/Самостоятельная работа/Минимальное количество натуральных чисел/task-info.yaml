@@ -1,0 +1,40 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 195
+        length: 303
+        placeholder_text: |-
+          # TODO переписать на цикл с постусловием
+          while sum_ < max_sum:  # делай пока ...
+              sum_ += n  # увеличиваем сумму, равносильно sum_ = sum_ + n
+              n += 1  # так как сумма ещё не достигла нужного значения, то увеличиваем переменную счетчик
+              print("Ещё считаю ...", sum_)
+          
+          print("Количество чисел: ", n)
+        initial_state:
+          length: 306
+          offset: 195
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          while True:
+              if sum_ > max_sum:  # если сумма превысила нужное значение, то останавливаем цикл
+                  break
+              sum_ += n
+              n += 1  # так как сумма ещё не достигла нужного значения, то увеличиваем переменную счетчик
+              print("Ещё считаю ...", sum_)
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 19 Oct 2024 12:58:54 UTC"
+record: -1

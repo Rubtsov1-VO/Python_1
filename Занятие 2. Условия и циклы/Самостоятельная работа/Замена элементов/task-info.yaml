@@ -1,0 +1,38 @@
+type: output
+files:
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 245
+        length: 244
+        placeholder_text: "# TODO Поменяйте местами значения согласно условию"
+        initial_state:
+          length: 50
+          offset: 105
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          max_index = 0
+          max_value = list_numbers[max_index]
+          
+          # Находим максимальное значение и его индекс
+          for i, current_value in enumerate(list_numbers):
+              if current_value >= max_value:
+                  max_value = current_value
+                  max_index = i
+          
+          # Меняем местами последний максимальный и последний элементы
+          list_numbers[max_index], list_numbers[-1] = list_numbers[-1], list_numbers[max_index]
+        selected: true
+        status: Solved
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 19 Oct 2024 17:38:20 UTC"
+record: -1

@@ -1,0 +1,52 @@
+type: output
+files:
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 549
+        placeholder_text: |-
+          salary = 5000  # Ежемесячная зарплата
+          spend = 6000  # Траты за первый месяц
+          months = 10  # Количество месяцев, которое планируется протянуть без долгов
+          increase = 0.03  # Ежемесячный рост цен
+          
+          # TODO Рассчитайте подушку безопасности, чтобы протянуть 10 месяцев без долгов
+          
+          print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов:", ...)
+        initial_state:
+          length: 354
+          offset: 0
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          salary = 5000  # Ежемесячная зарплата
+          spend = 6000  # Траты за первый месяц
+          months = 10  # Количество месяцев, которое планируется протянуть без долгов
+          increase = 0.03  # Ежемесячный рост цен
+          
+          money_capital = 0   # Подушка безопасности, чтобы протянуть 10 месяцев без долгов
+          
+          for _ in range(months):
+              money_capital += spend - salary
+              spend *= 1 + increase
+          
+          print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов:", round(money_capital, 2))
+        selected: true
+        status: Failed
+    learner_created: false
+status: Failed
+feedback:
+  message: Incorrect
+  time: "Sat, 19 Oct 2024 18:08:04 UTC"
+  expected: |
+    Подушка безопасности, чтобы протянуть 10 месяцев без долгов: 18783.28
+  actual: |
+    Подушка безопасности, чтобы протянуть 10 месяцев без долгов: 18800.0
+record: -1
+solution_hidden: true

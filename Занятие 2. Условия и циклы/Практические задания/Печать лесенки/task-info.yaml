@@ -1,0 +1,30 @@
+type: output
+files:
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 84
+        placeholder_text: "# TODO С помощью цикла for распечатайте лесенку"
+        initial_state:
+          length: 47
+          offset: 0
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          count_stairs = 4
+          for i in range(1, count_stairs + 1):
+              print("*" * i)
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 17 Oct 2024 11:21:24 UTC"
+record: -1

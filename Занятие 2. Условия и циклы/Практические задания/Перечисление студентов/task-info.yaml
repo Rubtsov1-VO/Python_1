@@ -1,0 +1,29 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 63
+        length: 79
+        placeholder_text: "# TODO распечатать в столбик все имена"
+        initial_state:
+          length: 38
+          offset: 59
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          for student in list_students:
+              print(student)
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 17 Oct 2024 11:30:05 UTC"
+record: -1
