@@ -21,7 +21,7 @@ files:
           
           print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов:", ...)
         initial_state:
-          length: 354
+          length: 549
           offset: 0
         initialized_from_dependency: false
         encrypted_possible_answer: |-
