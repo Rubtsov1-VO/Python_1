@@ -1,5 +1,10 @@
+import random
+from itertools import count
+
+
 def get_unique_list_numbers() -> list[int]:
-    ...  # TODO написать функцию для получения списка уникальных целых чисел
+    return random.sample(range(-10,10), 15)
+    # TODO написать функцию для получения списка уникальных целых чисел
 
 
 list_unique_numbers = get_unique_list_numbers()

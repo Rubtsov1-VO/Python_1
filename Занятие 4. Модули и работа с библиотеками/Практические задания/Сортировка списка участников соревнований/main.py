@@ -1,5 +1,6 @@
 # TODO Напишите функцию sort_participants
-
+def sort_participants(dict_):
+    return sorted(dict_, key=lambda item: item["name"])
 
 if __name__ == "__main__":
     participants_list = [
