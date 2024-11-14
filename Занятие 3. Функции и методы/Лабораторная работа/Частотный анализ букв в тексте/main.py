@@ -1,3 +1,8 @@
+from collections import Counter
+from itertools import count
+from operator import index
+
+
 def count_letters(text: str) -> dict:
     """
     Функция возвращает словарь котором ключи это буквы нижнего регистра полученные из text,
@@ -9,8 +14,14 @@ def count_letters(text: str) -> dict:
         print(result)  # {'у': 3, 'л': 2, 'к': 1, 'о': 2, 'м': 1, 'р': 1, 'ь': 1, 'я': 1, 'д': 1, 'б': 1, 'з': 1,
         'е': 1, 'ё': 1, 'н': 1, 'ы': 1, 'й': 1}
     """
-    ...  # TODO Реализуйте функцию
+    list_ =[]
+    for i in text:
+        a = i.lower()
+        if a.isalpha():
+            list_ += a
 
+    con = Counter(list_)
+    return con
 
 def calculate_frequency(letter_count: dict) -> dict:
     """
@@ -23,7 +34,22 @@ def calculate_frequency(letter_count: dict) -> dict:
         print(result)  # {'у': 0.15, 'л': 0.1, 'к': 0.05, 'о': 0.1, 'м': 0.05, 'р': 0.05, 'ь': 0.05, 'я': 0.05,
         'д': 0.05, 'б': 0.05, 'з': 0.05, 'е': 0.05, 'ё': 0.05, 'н': 0.05, 'ы': 0.05, 'й': 0.05}
     """
-    ...  # TODO Реализуйте функцию
+    value = 0
+
+    for i in count_dict.values():
+        value += i
+    for i,j in letter_count.items():
+        a = j/value
+        letter_count[i] = a
+    for i, j in letter_count.items():
+        print(i + ":",f'{j:.2f}')
+
+
+
+
+
+
+    # TODO Реализуйте функцию
 
 
 main_str = """

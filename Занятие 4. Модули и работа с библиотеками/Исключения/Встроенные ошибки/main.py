@@ -1,1 +1,1 @@
-# TODO Вызовите ошибку AssertionError с собственным текстом
+raise AssertionError("hello")# TODO Вызовите ошибку AssertionError с собственным текстом
