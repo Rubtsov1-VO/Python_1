@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 0
-        length: 42
+        length: 94
         placeholder_text: "# TODO Напишите функцию `multiply_numbers`"
         initial_state:
           length: 42
@@ -14,9 +14,9 @@ files:
           def multiply_numbers(a, b):
               product = a * b
               return product
-        selected: false
-        status: Unchecked
-      - offset: 45
+        selected: true
+        status: Solved
+      - offset: 116
         length: 96
         placeholder_text: "# TODO Перемножьте с помощью функции `multiply_numbers` три\
       \ пары чисел и распечатайте результаты"
@@ -33,7 +33,7 @@ files:
           print(result2)
           print(result3)
         selected: false
-        status: Unchecked
+        status: Solved
     learner_created: false
   - name: __init__.py
     visible: false
@@ -41,5 +41,8 @@ files:
   - name: tests/output.txt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 28 Oct 2024 05:32:21 UTC"
 record: -1

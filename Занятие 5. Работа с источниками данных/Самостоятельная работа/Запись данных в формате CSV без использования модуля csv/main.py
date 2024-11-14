@@ -2,6 +2,17 @@ import os
 
 OUTPUT_FILE = "output.csv"
 
+def to_csv_file(filename, headers, rows, delimiter=",", new_line="\n"):
+    with open(filename, 'w', encoding="utf-8") as file:
+        # Записываем заголовки
+        file.write(delimiter.join(headers))
+        file.write(new_line)
+
+        # Записываем строки с данными
+        for row in rows:
+            formatted_row = [str(value) for value in row]
+            file.write(delimiter.join(formatted_row))
+            file.write(new_line)
 
 # TODO реализовать функцию to_csv_file
 
@@ -23,3 +34,4 @@ if __name__ == '__main__':
         with open(OUTPUT_FILE, encoding="utf-8") as output_f:
             for line in output_f:
                 print(line, end="")
+to_csv_file(OUTPUT_FILE,headers_list,data)

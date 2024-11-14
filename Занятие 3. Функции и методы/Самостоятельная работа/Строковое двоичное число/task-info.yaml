@@ -3,8 +3,8 @@ files:
   - name: main.py
     visible: true
     placeholders:
-      - offset: 79
-        length: 62
+      - offset: 75
+        length: 183
         placeholder_text: "...  # TODO проверить что в строку входят только символы 1\
       \ и 0"
         initial_state:
@@ -19,8 +19,8 @@ files:
                   if d not in ALLOW_SYMBOLS:
                       return False
               return True
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: __init__.py
     visible: false
@@ -28,5 +28,8 @@ files:
   - name: tests/output.txt
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 30 Oct 2024 19:20:05 UTC"
 record: -1
