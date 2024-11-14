@@ -10,7 +10,7 @@ files:
     visible: true
     placeholders:
       - offset: 0
-        length: 53
+        length: 133
         placeholder_text: |-
           # TODO реализовать функцию count
           def count():
@@ -28,7 +28,10 @@ files:
           
               return count_value
         selected: false
-        status: Unchecked
+        status: Solved
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 30 Oct 2024 09:57:05 UTC"
 record: -1

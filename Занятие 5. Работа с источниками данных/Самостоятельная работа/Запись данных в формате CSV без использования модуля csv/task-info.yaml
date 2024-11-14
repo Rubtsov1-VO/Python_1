@@ -6,7 +6,7 @@ files:
   - name: main.py
     visible: true
     placeholders:
-      - offset: 40
+      - offset: 481
         length: 38
         placeholder_text: "# TODO реализовать функцию to_csv_file"
         initial_state:
@@ -26,8 +26,8 @@ files:
                       file.write(delimiter.join(formatted_row))
                       file.write(new_line)
         selected: false
-        status: Unchecked
-      - offset: 845
+        status: Solved
+      - offset: 1286
         length: 60
         placeholder_text: "# TODO Вызовете функцию to_csv_file и запишите данные в фай\
       л"
@@ -37,10 +37,16 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: "to_csv_file(OUTPUT_FILE, headers_list, data)"
         selected: false
-        status: Unchecked
+        status: Solved
     learner_created: false
   - name: tests/output.txt
     visible: false
     learner_created: false
-status: Unchecked
+  - name: output.csv
+    visible: true
+    learner_created: true
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 11 Nov 2024 18:19:43 UTC"
 record: -1
